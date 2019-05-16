@@ -1,4 +1,4 @@
-# extends-implements-with
+# extends-with-implements
 
 在Flutter中，有如下三种关系：
 
@@ -10,7 +10,7 @@
 
 extends ->  mixins -> implements
 
-extens在前，mixins在中间，implements最后，接下来看具体的例子。
+extends在前，mixins在中间，implements最后，接下来看具体的例子。
 
 ## 1. 继承(extends)
 
