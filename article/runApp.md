@@ -14,7 +14,7 @@ void runApp(Widget app) {
 }
 ```
 
-`WidgetsFlutterBinding` 使用了 [mixin](https://yahdude.github.io/Blog/post/1e4790f7473c20aa35d72cf542d39ab4)，将负责点击事件、绘制的 **XXXBinding** 组合起来，这个类也使用了单例模式，即 `ensureInitialized`。
+`WidgetsFlutterBinding` 使用了 mixin，将负责点击事件、绘制的 **XXXBinding** 组合起来，这个类也使用了单例模式，即 `ensureInitialized`。
 
 调用 `attachRootWidget` 将会触发 Widget、Element、RenderObject 的构建 调用 `scheduleWarmUpFrame` 会触发视图的第一帧上屏，同时因为是第一帧，也会伴随着一些初始化操作，所以这个函数相对一般的绘制耗时较长
 
